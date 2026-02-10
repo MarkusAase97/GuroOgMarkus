@@ -33,3 +33,8 @@ document.getElementById('toggleOvernatting').addEventListener('click', function 
     this.textContent = 'Trenger du overnatting?';
   }
 });
+
+// FREDAG
+document.getElementById("toggleFredag").addEventListener("click", function() {
+  document.getElementById("fredagContent").classList.toggle("hidden");
+});
