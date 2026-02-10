@@ -1,74 +1,112 @@
+/* ===== GRUNNLEGGENDE ===== */
 body {
-margin: 0;
-font-family: Georgia, serif;
-background: #f3eee8; /* lys beige */
-color: #4a3b2f;
+  margin: 0;
+  font-family: "Cormorant Garamond", Georgia, serif;
+  background: #f3eee8; /* DIN FARGE – beholdt ✅ */
+  color: #4a3b2f;
 }
 
-
+/* ===== HERO ===== */
 .hero {
-background: linear-gradient(rgba(243, 238, 232, 0.8), rgba(243, 238, 232, 0.9)),
-url('images/header2.jpg');
-background-size: cover;
-background-position: center;
-text-align: center;
-padding: 120px 20px;
+  background: linear-gradient(rgba(243, 238, 232, 0.85), rgba(243, 238, 232, 0.95)),
+  url('images/header2.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 110px 20px;
 }
-
 
 .hero h1 {
-font-size: 3rem;
-margin: 0;
+  font-size: 3.2rem;
+  margin: 0;
+  letter-spacing: 1px;
 }
-
 
 .date {
-font-size: 1.2rem;
-letter-spacing: 1px;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  opacity: 0.8;
 }
 
-
+/* ===== SEKSJONER SOM KORT ===== */
 section {
-max-width: 800px;
-margin: 40px auto;
-padding: 0 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
 }
 
-
+/* Overskrifter */
 h2 {
-border-bottom: 1px solid #d6cfc4;
-padding-bottom: 8px;
+  border-bottom: 1px solid #d6cfc4;
+  padding-bottom: 8px;
+  margin-top: 0;
 }
 
-
+/* ===== VIDEO ===== */
 .wedding-video {
-border-radius: 12px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
 }
 
-
+/* ===== KNAPPER (MER MINIMALISTISK) ===== */
 button {
-background: #c9b8a8;
-border: none;
-padding: 10px 16px;
-border-radius: 8px;
-cursor: pointer;
-font-family: Georgia, serif;
+  background: #4a3b2f;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-family: Georgia, serif;
+  transition: 0.2s ease;
 }
-
 
 button:hover {
-background: #b9a595;
+  background: #3a2f26;
 }
 
-
+/* ===== SKJULT INNHOLD ===== */
 .hidden {
-display: none;
+  display: none;
 }
 
+#programContent,
+#fredagContent,
+#hjelpContent,
+#overnattingContent {
+  margin-top: 15px;
+}
 
+/* ===== FREDAG (LITT EGEN TONE) ===== */
+.fredag {
+  background: #f0ede6;
+}
+
+/* ===== HJELP – PENERE OG VARM ===== */
+.hjelp {
+  background: #fff6ef;
+  border-left: 6px solid #e3b79a;
+}
+
+.hjelp p {
+  margin: 6px 0;
+}
+
+/* små "bullet"-aktige linjer for kake/telt osv */
+.hjelp p:not(:first-child) {
+  padding-left: 10px;
+}
+
+/* ===== OVERNATTING ===== */
+.overnatting {
+  background: #eef1f3;
+}
+
+/* ===== FOOTER ===== */
 footer {
-text-align: center;
-padding: 30px;
-background: #e8e2d9;
+  text-align: center;
+  padding: 30px;
+  background: #e8e2d9;
 }
