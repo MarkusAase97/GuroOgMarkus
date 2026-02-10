@@ -35,6 +35,13 @@ document.getElementById('toggleOvernatting').addEventListener('click', function 
 });
 
 // FREDAG
-document.getElementById("toggleFredag").addEventListener("click", function() {
-  document.getElementById("fredagContent").classList.toggle("hidden");
+document.getElementById('toggleFredag').addEventListener('click', function () {
+  const content = document.getElementById('overnattingContent');
+  if (content.classList.contains('hidden')) {
+    content.classList.remove('hidden');
+    this.textContent = 'Skjul';
+  } else {
+    content.classList.add('hidden');
+    this.textContent = 'Grilling fredag';
+  }
 });
