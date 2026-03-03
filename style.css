@@ -89,15 +89,6 @@ button:hover {
   background: white;
 }
 
-.hjelp p {
-  margin: 6px 0;
-}
-
-/* små "bullet"-aktige linjer for kake/telt osv */
-.hjelp p:not(:first-child) {
-  padding-left: 10px;
-}
-
 /* ===== OVERNATTING ===== */
 .overnatting {
   background: white;
