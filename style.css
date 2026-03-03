@@ -81,12 +81,12 @@ button:hover {
 
 /* ===== FREDAG (LITT EGEN TONE) ===== */
 .fredag {
-  background: #f0ede6;
+  background: white;
 }
 
 /* ===== HJELP – PENERE OG VARM ===== */
 .hjelp {
-  background: #fff6ef;
+  background: white;
   border-left: 6px solid #e3b79a;
 }
 
@@ -101,12 +101,12 @@ button:hover {
 
 /* ===== OVERNATTING ===== */
 .overnatting {
-  background: #eef1f3;
+  background: white;
 }
 
 /* ===== FOOTER ===== */
 footer {
   text-align: center;
   padding: 30px;
-  background: #e8e2d9;
+  background: #f3eee8;
 }
