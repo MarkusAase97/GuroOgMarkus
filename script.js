@@ -36,7 +36,7 @@ document.getElementById('toggleOvernatting').addEventListener('click', function 
 
 // FREDAG
 document.getElementById('toggleFredag').addEventListener('click', function () {
-  const content = document.getElementById('overnattingContent');
+  const content = document.getElementById('fredagContent');
   if (content.classList.contains('hidden')) {
     content.classList.remove('hidden');
     this.textContent = 'Skjul';
