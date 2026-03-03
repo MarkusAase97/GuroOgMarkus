@@ -1,95 +1,112 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Vårt Bryllup</title>
-<link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vårt Bryllup</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<header class="hero">
-<h1>Guro og Markus 💍</h1>
-<p class="date">8. august 2026</p>
-</header>
 
-<section class="intro"> 
-<h2>Velkommen</h2> 
-<p> 
-Vi gleder oss til å feire kjærligheten sammen med dere! 
-På denne siden finner dere praktisk informasjon om dagen, samt en liten video fra toastmastere. 
-</p> 
-</section> 
+  <div id="scrollOverlay" class="scroll-overlay"></div>
+
+  <div class="notice-banner">
+    NB: Vielsen er i xxxx kirke
+  </div>
+
+  <header class="hero">
+    <h1>Guro og Markus 💍</h1>
+    <p class="date">8. august 2026</p>
+  </header>
+
+  <section class="intro"> 
+    <h2>Velkommen</h2> 
+    <p> 
+      Vi gleder oss til å feire kjærligheten sammen med dere! 
+      På denne siden finner dere praktisk informasjon om dagen, samt en liten video fra toastmastere. 
+    </p> 
+  </section> 
   
-<section class="video-section"> 
-<h2>Vår video</h2> <video controls width="100%" class="wedding-video">
-<source src="videos/velkommen.mp4" type="video/mp4" /> 
-Nettleseren din støtter ikke videoavspilling. 
-</video> 
-</section>
+  <section class="video-section"> 
+    <h2>Vår video</h2> 
+    <video controls width="100%" class="wedding-video">
+      <source src="videos/velkommen.mp4" type="video/mp4" /> 
+      Nettleseren din støtter ikke videoavspilling. 
+    </video> 
+  </section>
 
+  <section class="info">
+    <h2>Praktisk informasjon</h2>
+    <ul>
+      <li><strong>Dato:</strong> 8. august 2026</li>
+      <li><strong>Vielse:</strong> xxxx Kirke, xxx - kl. 13:00</li>
+      <li><strong>Bryllupsfest:</strong> xxxxxx - kl. 16:00</li>
+      <li><strong>Antrekk:</strong> Pent/dress</li>
+    </ul>
+  </section>
 
-<section class="info">
-  <h2>Praktisk informasjon</h2>
-  <ul>
-    <li><strong>Dato:</strong> 8. august 2026</li>
-    <li><strong>Vielse:</strong> Gjerpen Kirke, Skien - kl. 13:00</li>
-    <li><strong>Bryllupsfest:</strong> Århus Gård - kl. 16:00</li>
-    <li><strong>Antrekk:</strong> Pent/dress</li>
-  </ul>
-</section>
+  <section class="program">
+    <h2>Program</h2>
+    <button id="toggleProgram">Vis program</button>
+    <div id="programContent" class="hidden">
+      <ul>
+        <li><strong>13:00:</strong> Vielse</li>
+        <li><strong>14:30:</strong> Folk kan dra til festlokalet, mens vi tar bilder</li>
+        <li><strong>15:30:</strong> Gratulasjoner og bobler</li>
+        <li><strong>17:00:</strong> Middag</li>
+        <li><strong>20:00:</strong> Fest og dans</li>
+      </ul>
+    </div>
+  </section>
 
+  <section class="fredag">
+    <h2>Fredagen</h2>
+    <button id="toggleFredag">Vis info om fredag</button>
+    <div id="fredagContent" class="hidden">
+      <ul>
+        <li><strong>Sted:</strong> Grilling – xxxxx</li>
+        <li><strong>Dato:</strong> 7. august 2026 – kl. 18:00</li>
+        <li><strong>Hvem:</strong> For de unge (under 35)</li>
+      </ul>
+    </div>
+  </section>
 
-<section class="program">
-  <h2>Program</h2>
-  <button id="toggleProgram">Vis program</button>
-  <div id="programContent" class="hidden">
-    <p>13:00 – Vielse</p>
-    <p>14:30 – Folk kan dra til festlokalet, mens vi tar bilder</p>
-    <p>15:30 – Gratulasjoner og bobler</p>
-    <p>17:00 – Middag</p>
-    <p>20:00 – Fest og dans</p>
-  </div>
-</section>
+  <section class="hjelp">
+    <h2>Hjelp</h2>
+    <button id="toggleHjelp">Ønsker du å hjelpe?</button>
+    <div id="hjelpContent" class="hidden">
+      <ul>
+        <li><strong>Baking:</strong> Ønsker du å bake en kake?</li>
+        <li><strong>Rigging:</strong> Sette opp fest-teltet?</li>
+        <li><strong>Annet:</strong> Noe som helst?</li>
+        <li><strong>Kontakt:</strong> Meld oss! Alt settes pris på!</li>
+      </ul>
+    </div>
+  </section>
 
-<section class="fredag">
-  <h2>Fredagen</h2>
-  <button id="toggleFredag">Vis info om fredag</button>
-  <div id="fredagContent" class="hidden">
-    <p><strong>Sted:</strong> Grilling – Enggravhøgda 12b</p>
-    <p><strong>Dato:</strong> 7. august 2026 – kl. 18:00</p>
-    <p>For de unge (under 35)</p>
-  </div>
-</section>
+  <section class="overnatting">
+    <h2>Overnatting</h2>
+    <button id="toggleOvernatting">Trenger du overnatting?</button>
+    <div id="overnattingContent" class="hidden">
+      <p>Vi har noen forslag til overnatting i nærheten:</p>
+      <ul>
+        <li><strong>Alternativ 1:</strong> Hotell i xxx sentrum</li>
+        <li><strong>Alternativ 2:</strong> Airbnb i området</li>
+        <li><strong>Alternativ 3:</strong> Gjestehus nær xxx xxx</li>
+        <li><strong>Hjelp:</strong> Si ifra om dere trenger hjelp med booking!</li>
+      </ul>
+    </div>
+  </section>
 
-<section class="hjelp">
-  <h2>Hjelp</h2>
-  <button id="toggleHjelp">Ønsker du å hjelpe?</button>
-  <div id="hjelpContent" class="hidden">
-    <p>Ønsker du å hjelpe med noe?</p>
-    <p>Bake en kake?</p>
-    <p>Sette opp fest-teltet?</p>
-    <p>Noe som helst?</p>
-    <p>Meld oss! Alt settes pris på!</p>
-  </div>
-</section>
+  <footer>
+    <p>Vi gleder oss til å feire med dere ❤️</p>
+  </footer>
 
-<section class="overnatting">
-  <h2>Overnatting</h2>
-  <button id="toggleOvernatting">Trenger du overnatting?</button>
-  <div id="overnattingContent" class="hidden">
-    <p><strong>Vi har noen forslag til overnatting i nærheten:</p>
-    <p>Hotell i Skien sentrum</p>
-    <p>Airbnb i området</p>
-    <p>Gjestehus nær Århus Gård</p>
-    <p>Si ifra om dere trenger hjelp med booking!</p>
-  </div>
-</section>
-
-<footer>
-<p>Vi gleder oss til å feire med dere ❤️</p>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
