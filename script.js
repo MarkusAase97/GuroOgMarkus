@@ -1,15 +1,3 @@
-// SCROLL-EFFEKT (Lager fargelaget over toppbildet når du scroller)
-window.addEventListener('scroll', function() {
-  const overlay = document.getElementById('scrollOverlay');
-  const scrollPosition = window.scrollY;
-  
-  // Beregner hvor synlig fargen skal være. Den er på 100% etter 400px scroll.
-  let opacity = scrollPosition / 400; 
-  if (opacity > 0.95) opacity = 0.95; // Stopper på 95% så man *kanskje* aner bildet bak
-  
-  overlay.style.opacity = opacity;
-});
-
 // PROGRAM
 document.getElementById('toggleProgram').addEventListener('click', function () {
   const content = document.getElementById('programContent');
@@ -48,12 +36,12 @@ document.getElementById('toggleOvernatting').addEventListener('click', function 
 
 // FREDAG
 document.getElementById('toggleFredag').addEventListener('click', function () {
-  const content = document.getElementById('fredagContent'); // Fikset target her!
+  const content = document.getElementById('overnattingContent');
   if (content.classList.contains('hidden')) {
     content.classList.remove('hidden');
-    this.textContent = 'Skjul info om fredag';
+    this.textContent = 'Skjul';
   } else {
     content.classList.add('hidden');
-    this.textContent = 'Vis info om fredag';
+    this.textContent = 'Grilling fredag';
   }
 });
