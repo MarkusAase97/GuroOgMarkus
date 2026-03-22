@@ -8,12 +8,16 @@ body {
 
 /* ===== HERO ===== */
 .hero {
-  background: linear-gradient(rgba(243, 238, 232, 0.85), rgba(243, 238, 232, 0.95)),
+  background: linear-gradient(rgba(243, 238, 232, 0.2), rgba(243, 238, 232, 0.6)),
   url('images/header2.jpg');
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: 110px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px 20px;
 }
 
 .hero h1 {
