@@ -6,7 +6,7 @@ document.getElementById('toggleProgram')?.addEventListener('click', function () 
     this.textContent = 'Skjul program';
   } else {
     content.classList.add('hidden');
-    this.textContent = 'Vis fullt program';
+    this.textContent = 'Vis program';
   }
 });
 // HJELP
