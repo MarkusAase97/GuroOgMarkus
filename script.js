@@ -39,6 +39,6 @@ document.getElementById('toggleFredag')?.addEventListener('click', function () {
     this.textContent = 'Skjul';
   } else {
     content.classList.add('hidden');
-    this.textContent = 'Grilling fredag';
+    this.textContent = 'Vis program';
   }
 });
