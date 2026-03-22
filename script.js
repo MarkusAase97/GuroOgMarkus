@@ -25,7 +25,7 @@ document.getElementById('toggleOvernatting')?.addEventListener('click', function
   const content = document.getElementById('overnattingContent');
   if (content.classList.contains('hidden')) {
     content.classList.remove('hidden');
-    this.textContent = 'Skjul overnatting';
+    this.textContent = 'Skjul forslag';
   } else {
     content.classList.add('hidden');
     this.textContent = 'Forslag til overnattingssteder';
