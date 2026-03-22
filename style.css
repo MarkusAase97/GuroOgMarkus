@@ -100,3 +100,11 @@ footer {
   padding: 40px;
   background: #f3eee8;
 }
+
+/* ===== COLOR OF LINKS ===== */
+a {
+  color: #8a7d2f;
+}
+a:hover {
+  color: #4a3b2f;
+}
