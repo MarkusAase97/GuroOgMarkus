@@ -59,7 +59,7 @@ button {
   padding: 10px 16px;
   border-radius: 999px;
   cursor: pointer;
-  font-family: Georgia, serif;
+  font-family: "Open Sans", sans-serif;
   transition: 0.2s ease;
 }
 
