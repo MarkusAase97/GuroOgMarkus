@@ -42,3 +42,14 @@ document.getElementById('toggleFredag')?.addEventListener('click', function () {
     this.textContent = 'Vis program';
   }
 });
+// Ønskeliste
+document.getElementById('toggleOnskeliste')?.addEventListener('click', function () {
+  const content = document.getElementById('fredagContent');
+  if (content.classList.contains('hidden')) {
+    content.classList.remove('hidden');
+    this.textContent = 'Skjul';
+  } else {
+    content.classList.add('hidden');
+    this.textContent = 'Hva ønsker vi oss?';
+  }
+});
