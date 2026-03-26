@@ -44,7 +44,7 @@ document.getElementById('toggleFredag')?.addEventListener('click', function () {
 });
 // Ønskeliste
 document.getElementById('toggleOnskeliste')?.addEventListener('click', function () {
-  const content = document.getElementById('fredagContent');
+  const content = document.getElementById('onskelisteContent');
   if (content.classList.contains('hidden')) {
     content.classList.remove('hidden');
     this.textContent = 'Skjul';
